@@ -1,0 +1,24 @@
+import requests
+
+#for placing user input into variable to post in website
+payload = {'ip address', input}
+
+#for performing get request on URL
+r = requests.get("https://www.virustotal.com/gui/home/search")
+#r = requests.get("https://talosintelligence.com")
+#r = requests.get("https://exchange.xforce.ibmcloud.com/")
+#r = requests.get("https://urlscan.io/search/#*")
+#r = requests.get("https://www.ipvoid.com/ip-blacklist-check/")
+
+
+#obtain  IP address from the user
+input = print("Please enter an IP address")
+
+
+#save the data obtained from website to a file
+with open('IPVOID.png','wb') as f:
+    f.write(r.content)
+
+
+#print the requested content
+#print(r.content)
